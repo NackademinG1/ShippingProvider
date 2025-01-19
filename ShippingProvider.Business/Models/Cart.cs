@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShippingProvider.Business.Models
 {
-    internal class Cart
+    public class Cart
     {
         public List<Product> Products { get; set; } = [];
     }

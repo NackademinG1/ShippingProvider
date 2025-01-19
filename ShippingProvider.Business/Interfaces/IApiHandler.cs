@@ -7,14 +7,8 @@ using System.Threading.Tasks;
 
 namespace ShippingProvider.Business.Interfaces
 {
-    public interface IShippingService
+    public interface IApiHandler
     {
-        ShippingOption GetOneShippingOption();
-        List<ShippingOption> GetShippingOptions();
-        ResponseResult GetOffers(int cartWeight);
-        
-
-        
-        
+        ResponseResult CallApi(string apiKey, string apiUrl, string apiParams);
     }
 }

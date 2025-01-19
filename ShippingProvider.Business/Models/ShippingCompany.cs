@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace ShippingProvider.Business.Models
 {
-    internal class ShippingCompany
+    public class ShippingCompany
     {
-        public string ApiUrl { get; private set; } = null!;
+        public string ApiUrl { get; set; } = null!;
+        public string ApiKey { get; set; } = null!;
         public string CompanyName { get; set; } = null!;
-        public List<ShippingTier> ShippingTiers { get; set; } = [];
-
-        public int DeliveryTime { get; set; }
 
     }
 }
